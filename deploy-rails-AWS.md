@@ -7,5 +7,15 @@
   
 ###II. Config
 ####  1. Unicorn
+        * Install
+           Add to Gemfile
+           ```
+            gem 'unicorn'
+           ```
+           Save, exit and bundle
+           ```
+            bundle
+           ```
+        * Configure Unicorn
 ####  2. Nginx
 ####  3. Fix bung
