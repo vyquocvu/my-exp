@@ -50,8 +50,12 @@ https://www.docker.com
   Or 
   $ wget -qO- https://get.docker.com/gpg | sudo apt-key add -
 ```
-Vậy là bạn đã cài xong Docker engine
+Vậy là bạn đã cài xong Docker engine, Đôi khi docker không chậy được và báo lỗi này 
 
+```
+Warning: failed to get default registry endpoint from daemon (Cannot connect to the Docker daemon. Is the docker daemon running on this host?). Using system default: https://index.docker.io/v1/
+```
+cách giải quyết là dùng `sudo docker` thay vì dùng `docker`.
 #Làm việc với docker
 ```
   $ docker images             # xem tất cả image trong máy
