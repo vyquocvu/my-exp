@@ -20,7 +20,7 @@
   `ENV['GMAIL_USERNAME']` and `ENV['GMAIL_PASSWORD']` can be string of username 
   and password, but it not safe. You should export it from ENV of server.
   
- 3. Generate mailer
+3. Generate mailer
   It like controller 
   ```shell
     rails generate mailer user
@@ -38,5 +38,34 @@
     end
   ```
   Mail template in `views/mailer/checkout_email.html.erb`
+  ```erb
+    <!DOCTYPE html>
+      <html>
+        <head>
+          <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+        </head>
+        <body>
+          <h1>Xin chào <% @order.email %></h1>
+          <h2>
+            Bạn đã thanh toán thành công đơn hàng từ Venshop.
+          </h2>
+          <% @order.cart_items.each do |item| %>
+            <p>
+              <% product = Product.find_by(id: item.id)%>
+              <%= product[:name] %>
+              <strong style="color:red;"> Giá </strong> 
+              <%= number_to_currency((item.price.to_i * item.quantity.to_i)/100.0) %>
+            </p>
+          <% end %>
+          <strong> Tổng giá <%=number_to_currency(@order.total/100.0) %></strong>
+          <p>
+            Thời gian giao hàng từ 3 tới 5 ngày, kể từ ngày hoàn tất thanh toán. 
+            <br>
+            Mọi thắc mắc và phản hồi xin liên hệ 1900......
+          </p>
+        </body>
+      </html>
+  ```
   
-  To send Email call ```ruby UserMailer.checkout_email(current_user || User.first, @order ).deliver_now ```
+  To send Email call ```UserMailer.checkout_email(current_user).deliver_now ```
+  
