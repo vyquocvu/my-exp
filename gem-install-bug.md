@@ -17,6 +17,9 @@
   bundle show [mysql2] # To find the location.
  
 2. bundle on server
+  
   Take a look at --without option:
 
+  ```
   bundle install --without development test
+  ```
