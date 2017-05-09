@@ -18,3 +18,10 @@ Inspinia
 Bootstrap admin theme [here](https://github.com/wangshijun/inspinia)
 
 [Some admin template](http://azmind.com/ruby-on-rails-admin-templates/)
+
+![](http://codegeekz.com/wp-content/uploads/Bootstrap-Image-Gallery.jpeg)
+[blueimp Gallery](https://github.com/blueimp/Gallery)
+
+
+![](https://i.ytimg.com/vi/8w9w-UF1X3Q/maxresdefault.jpg)
+[Materialize](http://materializecss.com/)
