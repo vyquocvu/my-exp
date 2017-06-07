@@ -27,3 +27,7 @@ Bootstrap admin theme [here](https://github.com/wangshijun/inspinia)
 ![](https://i.ytimg.com/vi/8w9w-UF1X3Q/maxresdefault.jpg)
 
 [Materialize](http://materializecss.com/)
+
+![](https://atomiks.github.io/tippyjs/img/tippy.svg)
+
+[Typpi](https://atomiks.github.io/tippyjs/#creating-html-templates)
