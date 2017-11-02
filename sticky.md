@@ -12,3 +12,22 @@
     }
 ```
     
+``` javascript
+    null == false          // returns false
+
+    null == 0              // returns false
+
+    null == ''             // returns false
+    // But,
+
+    !null == !false       // returns true
+
+    !null == !0           // returns true
+
+    !false == !undefined  // returns true
+    // And,
+
+    null == undefined     // returns true
+
+    false == 0            // returns true
+```
