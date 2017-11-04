@@ -9,3 +9,6 @@ Angular.js
   not blind to html ng-blind="" or {{}}
 ```
 => $scope.object.vari and {{object.vari}}
+
+Default image
+<img ng-src="{{item.amzImg}}" src="/images/noimage.png" image-onload style="width: 100px;" class="none img-responsive">
