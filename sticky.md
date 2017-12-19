@@ -11,25 +11,31 @@
       return str;
     }
 ```
-    
+   
+   Js
 ``` javascript
     null == false          // returns false
-
     null == 0              // returns false
-
     null == ''             // returns false
     // But,
-
     !null == !false       // returns true
-
     !null == !0           // returns true
-
     !false == !undefined  // returns true
     // And,
-
     null == undefined     // returns true
-
     false == 0            // returns true
 ```
 
 autoComplete="new-password"
+
+HTML
+
+✕  &#x2715; ✓  &#x2713;
+
+✖  &#x2716; ✔  &#x2714;
+
+✗  &#x2717;
+
+✘  &#x2718;
+
+×  &#xd7;  &times;
