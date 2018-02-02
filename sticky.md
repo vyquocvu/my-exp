@@ -30,12 +30,19 @@ autoComplete="new-password"
 
 HTML
 
+```
 ✕  '&#x2715'; ✓  '&#x2713';
-
 ✖  '&#x2716'; ✔  '&#x2714';
-
 ✗  '&#x2717';
-
 ✘  '&#x2718';
-
 ×  '&#xd7';  '&times';
+```
+
+```js
+    products = (products || []).sort((l, r) => {
+      const ln = l.isdeal ? 0 : 1;
+      const rn = r.isdeal ? 0 : 1;
+      return ln - rn;
+    });
+    // sort isdeal first
+```
