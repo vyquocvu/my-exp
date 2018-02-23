@@ -46,3 +46,32 @@ HTML
     });
     // sort isdeal first
 ```
+
+The simplest way would be to use the native `Number` function:
+
+``` javascript
+// parseInt:
+    var x = parseInt("1000", 10);
+
+// unary plus if your string is already in the form of an integer:
+    var x = +"1000";
+
+// if your string is or might be a float and you want an integer:
+    var x = Math.floor("1000.01"); //floor automatically converts string to number
+
+// or, if you're going to be using Math.floor several times:
+    var floor = Math.floor;
+    var x = floor("1000.01");
+
+// If you're the type who forgets to put the radix in when you call parseInt,
+// you can use parseFloat and round it however you like. Here I use floor.
+    var floor = Math.floor;
+    var x = floor(parseFloat("1000.01"));
+
+// Interestingly, Math.round (like Math.floor) will do a string to number conversion,
+// so if you want the number rounded (or if you have an integer in the string),
+// this is a great way, maybe my favorite:
+    var round = Math.round;
+    var x = round("1000"); //equivalent to round("1000",0)
+```
+
