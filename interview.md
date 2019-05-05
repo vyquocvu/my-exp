@@ -10,7 +10,7 @@ Bài viết mang hơi hướng Marvel, nên cân nhắc trước khi đọc.
 
 1. If else, Loop
 
-    ..* Ex: 1 to 100000, x % 3 = 0 then print "Ping", 4 print "Pong", 12 print "Ping pong"
+    ..* Ex: 1 to 100000, x % 3 = 0 then 12 print "Ping pong", print "Ping", 4 print "Pong",
   
     Hai cái thằng này là khởi thủy sức mạnh của thế giới, nó tồn tại mọi nơi, mọi ngôn ngữ, mọi hành tinh, nó làm đầu ta đau, máy ta chết đứng, ram ta bốc khói nghi ngút nhưng nó cũng là cái mang sự huyền ảo và vi diệu! Nắm được nó là nắm được sức mạng vô đối nhất hệ mặt trời, đáng bại bất kì siêu anh hùng nào từ bất kì thế giới nào. Điều quan trọng là logic làm sao sử dụng thế nào cái nào đúng, cái nào sai, rút gọn cái nào, tối ưu cái nào, thêm hay bớt.
 
